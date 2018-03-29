@@ -1,0 +1,393 @@
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ *
+ * Theme Name: Calm
+ * Theme URI: http://www.themeforest.net
+ * Description: A Responsive Underconstruction Theme For You
+ * Author: Jogres
+ * Author URI: http://www.jogres.com
+ */
+
+
+ /*!  you  */
+
+@font-face {
+  font-family: 'BNazanin';
+  src: url('fonts/BNazanin.eot?#') format('eot'),  /* IE6–8 */
+       url('fonts/BNazanin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('fonts/BNazanin.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+* {
+	font-family: BNazanin, Arial, Helvetica, sans-serif;
+}
+.text-end- {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+}
+
+.div-me {
+    padding: 0px;
+    margin: 0px;
+    bottom: 0px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+}
+
+ /*!  you  */
+
+
+body {
+	color: #fff;
+	height:100%;
+	margin: 0;
+	width:100%;
+}
+.bg {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
+	height: 100%;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+    width: 100%;
+    z-index: -1;
+}
+.header {
+    background: rgba(0,0,0,0.7);
+	color: #fff;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.header-content {
+	display: none;
+}
+span.phone {
+	background: url(../images/phone.png) no-repeat left;
+	display: inline-block;
+	padding: 10px 15px;
+}
+span.email {
+	background: url(../images/mail.png) no-repeat left;
+	display: inline-block;
+	padding: 10px 15px 10px 18px;
+}
+span.email a{
+	color: #fff;
+	-o-transition:all .3s;
+	-moz-transition:all .3s;
+	-webkit-transition:all .3s;
+	-ms-transition:all .3s;
+}
+span.email a:hover{
+	color: #aaa;
+	text-decoration: none;
+}
+span.address {
+	background: url(../images/address.png) no-repeat left;
+	display: inline-block;
+	padding: 10px 0 10px 20px;
+}
+.contact_form {
+	margin: 20px 0;
+}
+.contact_form label {
+	float: right;
+	font-weight: normal;
+	height: 25px;
+	margin: 5px 0;
+	padding: 5px 0 0;
+	width: 100px;
+}
+.contact_form input {
+	color: #888;
+	float: left;
+	font-weight: normal;
+	margin: 5px 0;
+	padding: 5px;
+	width: 80%;
+	direction:rtl;
+}
+.contact_form textarea {
+	color: #888;
+	border: 0;
+	margin: 5px 0;
+	padding: 5px;
+	width: 80%;
+	direction:rtl;
+}
+.contact_form input[type="submit"] {
+	background: #F7B500;
+	border: 0;
+	color: #000;
+	cursor: pointer;
+	height: 30px;
+	margin: 5px 0;
+	padding: 5px;
+	width: 100px;
+}
+.contact-details {
+	font-size: 12px;
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+.close-header {
+	cursor: pointer;
+	display: none;
+	position:relative;
+	margin: 0 0 0 auto;
+	padding: 0;
+	width: 50px;
+}
+.open-header {
+	cursor: pointer;
+	display: block;
+	margin: 0 0 0 auto;
+	padding: 0;
+	position:absolute;
+	width: 50px;
+	position: relative;
+}
+.isi {
+	margin-top: 4%;
+	margin-bottom: 5%;
+}
+.logo {
+	display: inherit;
+	margin: 25px 0;
+	position: relative;
+}
+.countdown {
+	display: block;
+	font-size: 24px;
+	line-height: 18px;
+	position: relative;
+	color: #fff;
+	margin: 20px 0;
+	direction:rtl;
+}
+.time span {
+	font-size: 160px;
+	line-height: 160px;
+	margin: 0 0 0 -10px;
+}
+.days, .hours, .minutes, .seconds {
+	font-size: 120px;
+	line-height: 100px;
+	margin: 0 0 0 0px;
+}
+ul.time {
+    list-style: none outside none;
+    margin: 0;
+}
+ul.time li {
+    display: inline-block;
+	padding: 0 60px;
+    position: relative;
+}
+.dotted{
+	border-right: 1px solid rgba(255,255,255,0.30);
+}
+ul.socmed {
+	display: block;
+	margin: 20px 0;
+	overflow: hidden;
+	position: relative;
+}
+ul.socmed li {
+	display: inline-block;
+	margin: 0;
+	position: relative;
+}
+.subscribe {
+	margin: 20px 0;
+}
+.subscribe input[type=text] {
+	background: #fff;
+	border: 1px solid #dddddd;
+	color: #888;
+	padding: 5px;
+	width: 40%;
+	direction:rtl;
+	}
+.subscribe input[type=submit] {
+	background: #F7B500;
+	border: 0;
+	color: #000;
+	cursor: pointer;
+	height: 30px;
+	margin-left: 5px;
+	padding: 5px;
+	position: relative;
+	width: 100px;
+	}
+.subscrib input[type=submit]:hover {
+	background: #000;
+	color: #F7B500;
+	}
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (min-width: 1200px) {
+.last {
+	border: none;
+	}
+	}
+
+	@media only screen and (min-width: 976px) and (max-width: 1199px) {
+span.phone {
+	margin-bottom: 0px;
+}
+span.email {
+	margin-bottom: 0px;
+	padding: 10px 0px 10px 18px;
+}
+span.address {
+	padding: 0 0 0 20px;
+}
+.contact_form input {
+	width: 75%;
+	}
+.contact_form textarea {
+	width: 75%;
+	}
+ul.time li {
+	padding: 0 25px;
+}
+.last {
+	border: none;
+	}
+	}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 976px) {
+span.phone {
+	margin-bottom: 0px;
+	padding: 10px 15px;
+}
+span.email {
+	margin-bottom: 0px;
+	padding: 10px 0px 10px 18px;
+}
+span.address {
+	padding: 0 0 0 20px;
+}
+.contact_form input {
+	width: 70%;
+	}
+.contact_form textarea {
+	width: 70%;
+	}
+ul.time li {
+	padding: 0 25px;
+}
+.days, .hours, .minutes, .seconds {
+	font-size: 80px;
+	line-height: 60px;
+	}
+.last {
+	border: none;
+	}
+	}
+
+	/* All Mobile Sizes (devices and browser)
+	@media only screen and (max-width: 767px) {
+	} */
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+span.phone {
+	margin-bottom: 0px;
+	padding: 10px 15px;
+}
+span.email {
+	margin-bottom: 0px;
+	padding: 10px 15px 10px 18px;
+}
+span.address {
+	padding: 10px 15px 10px 20px;
+}
+.contact_form input {
+	width: 75%;
+	}
+.contact_form textarea {
+	width: 75%;
+	}
+.logo {
+	line-height: 110px;
+	}
+h1 {
+	font-size: 24px;
+	}
+.countdown {
+	font-size: 16px;
+	}
+ul.time li {
+	padding: 0 8px;
+	}
+.days, .hours, .minutes, .seconds {
+	font-size: 80px;
+	line-height: 60px;
+	margin: 0;
+	}
+.last {
+	border: none;
+	}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 480px) {
+span.phone {
+	margin-bottom: 0px;
+	padding: 10px 15px;
+}
+span.email {
+	margin-bottom: 0px;
+	padding: 10px 15px 10px 18px;
+}
+span.address {
+	margin-bottom: 10px;
+	padding: 10px 15px 10px 20px;
+}
+.contact_form input {
+	width: 67%;
+	}
+.contact_form textarea {
+	width: 67%;
+	}
+.logo {
+	line-height: 110px;
+}
+h1 {
+	font-size: 24px;
+	}
+.countdown {
+	font-size: 16px;
+	}
+ul.time li {
+	padding: 0 40px;
+	margin-bottom: 20px;
+	}
+.days, .hours, .minutes, .seconds {
+	font-size: 60px;
+	line-height: 60px;
+	margin: 0 0 0 0px;
+	}
+.last, .last2 {
+	border: none;
+	}
+ul.socmed {
+	margin: 0 0 25px;
+	}
+	}

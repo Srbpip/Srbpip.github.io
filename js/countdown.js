@@ -3,8 +3,7 @@ $(function() {
   var currentDate = new Date();
   var d = new Date();
   var n = d.getTime();
-  n=1527999000000-n;
-  //n=1529999000000-n;
+  n=1531859000000-n;
   $('.countdown').countdown(n+currentDate.valueOf(), function(event) {
     $this = $(this);
     switch(event.type) {
